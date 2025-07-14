@@ -1,20 +1,16 @@
-# octra wallet generator
+curl -fsSL https://bun.sh/install | bash
 
-## quick Start
 
-**download and start wallet generator web UI with a single command:**
+source ~/.bashrc
 
-**linux/macOS:**
-```bash
-curl -fsSL https://octra.org/wallet-generator.sh | bash
-```
 
-**windows:**
-```powershell
-powershell -c "irm octra.org/wallet-generator.ps1 | iex"
-```
+bun --version
 
-this command will:
-- download the latest source code and build the wallet generator
-- start the server and open the generator web UI page in your browser
-- install to `~/.octra/wallet-generator` for future use
+
+bun install
+
+
+bun run build
+
+
+bun start
